@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\catedral.png",
+      "PackagePath": "staticwebassets\\Uploads\\catedral.png"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\cien.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\cien.jpg"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\congo.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\congo.jpg"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\guerra.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\guerra.jpg"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\harry.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\harry.jpg"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\lazarillo.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\lazarillo.jpg"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\quijote.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\quijote.jpg"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\Uploads\\viajera.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\viajera.jpg"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\css\\form.css",
+      "PackagePath": "staticwebassets\\css\\form.css"
+    },
+    {
+      "Id": "C:\\Aspnet\\src\\AppStore\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AppStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AppStore.props",
+      "PackagePath": "build\\AppStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AppStore.props",
+      "PackagePath": "buildMultiTargeting\\AppStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AppStore.props",
+      "PackagePath": "buildTransitive\\AppStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
