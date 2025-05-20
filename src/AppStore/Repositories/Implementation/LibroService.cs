@@ -71,7 +71,7 @@ namespace AppStore.Repositories.Implementation
             if (!string.IsNullOrEmpty(term))
             {
                 term = term.ToLower();
-                list = list.Where(x=>x.Titulo!.ToLower().StartsWith(term)).ToList();
+                list = list.Where(x=>x.Titulo!.ToLower().Contains(term)).ToList();
             }
             if(paging)
             {
