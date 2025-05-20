@@ -20,22 +20,26 @@ namespace AppStore.Controllers
         [HttpPost]
         public IActionResult Add(Libro libro)
         {
-            libro.CategoriaList = _categoriaService.List().Select(a=> new SelectListItem{Text = a.Nombre, Value = a.Id.ToString()});
+            libro.CategoriaList = _categoriaService.List()
+                .Select(a=> new SelectListItem{Text = a.Nombre, Value = a.Id.ToString()});
             if(!ModelState.IsValid)
             {
                 return View(libro);
             }
+            
             if(libro.ImageFile != null)
             {
-                var resultado =_fileService.SaveImage(libro.ImageFile);
-                if(resultado.Item1 == 0)
-                {
-                    TempData["msg"] = "Error al subir la imagen";
-                    return View(libro);
-                }
-                var imagenName = resultado.Item2;
-                libro.Imagen = imagenName;
+            var resultado =  _fileService.SaveImage(libro.ImageFile);
+            if(resultado.Item1 == 0)
+            {
+                TempData["msg"] = "La imagen no pudo guardarse exitosamente";
+                return View(libro);
             }
+            var imagenName = resultado.Item2;
+            libro.Imagen = imagenName;
+
+            }
+        
             var resultadoLibro = _libroService.Add(libro);
             if(resultadoLibro)
             {
@@ -49,7 +53,7 @@ namespace AppStore.Controllers
         {
             var libro = new Libro();
             libro.CategoriaList = _categoriaService.List().Select(a=> new SelectListItem{Text=a.Nombre, Value=a.Id.ToString()});
-            return View();
+            return View(libro);
         }
         public IActionResult Edit(int id)
         {
@@ -57,7 +61,8 @@ namespace AppStore.Controllers
         }
         public IActionResult LibroList()
         {
-            return View();
+            var libros = _libroService.List();
+            return View(libros);
         }
         public IActionResult Delete(int id)
         {

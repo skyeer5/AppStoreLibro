@@ -23,7 +23,7 @@
          libreria store
       </div>
       <ul class="nav-link">
-          <li><a class="active" href="Index">Inicio</a></li>
+          <li><a class="active" href="/Home/Index">Inicio</a></li>
           <li><a href="About">About</a></li>
         @if(!string.IsNullOrEmpty(username))
         {
@@ -32,7 +32,7 @@
             
             <ul class="dropdown-nav-link">
                 <li><a href="#">Categorias</a></li>
-                <li><a href="#">Libros</a></li>
+                <li><a href="/Libro/Add">Libros</a></li>
                 <li><a href="/UserAuthentication/Logout">Logout</a></li>
             </ul>
           </li>

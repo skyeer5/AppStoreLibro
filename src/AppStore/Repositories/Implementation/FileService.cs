@@ -16,13 +16,13 @@ namespace AppStore.Repositories.Implementation
         {
             try{
                 var wwwPath = this.environment.WebRootPath;
-                var path = Path.Combine(wwwPath, "/Uploads");
+                var path = Path.Combine(wwwPath, "Uploads");
                 if(!Directory.Exists(path))
                 {
                     Directory.CreateDirectory(path);
                 }
                 var ext = Path.GetExtension(imageFile.FileName);
-                var extensionAllowed = new string[]{"jpg","jpeg", "png"};
+                var extensionAllowed = new string[]{".jpg",".jpeg", ".png"};
                 if(!extensionAllowed.Contains(ext))
                 {
                     var message = $"Las extensiones de imagenes permitidas son {extensionAllowed}";
